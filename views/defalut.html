@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="format-detection" content="telephone=no">
+        <link rel="icon" href="/static/dotalab_tab_icon.png">
+        <link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/fontawesome/4.4.0/css/font-awesome.css">
+        <title>666刀塔</title>
+        <style type="text/css">
+            #content article {
+                width: 80%;
+                height: 100%;
+                text-align: center;
+                margin: 0 auto;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="page-container" id="page-container">
+            <nav-component
+                :reveal='reveal'>
+            </nav-component>
+            <div id="content" class="container">
+                <h2>默认页面</h2>
+            </div>
+            <footer-component></footer-component>
+            <search-component :show='show' @submit='reveal(0)'>
+            </search-component>
+        </div>
+    </body>
+    <script type="text/javascript" src="/static/dist/vendor.js"></script>
+    <script type="text/javascript" src="/static/dist/contact_us.js" ></script>
+</html>

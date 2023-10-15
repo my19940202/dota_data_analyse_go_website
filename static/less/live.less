@@ -1,0 +1,195 @@
+.live-show {
+    background: #242E36;
+    // padding: 10px 0;
+    div {
+        padding: 0;
+    }
+    @live-w: 800px;
+    @hero-img-ratio: 1.77;
+    @hero-img-h: 32px;
+    @hero-img-w: @hero-img-h * @hero-img-ratio;
+    height: auto;
+    overflow: hidden;
+    .live-score {
+        width: 100%;
+        height: @hero-img-h;
+        margin-bottom: 10px;
+        cursor: pointer;
+        .live-score-team {
+            width: @hero-img-w * 5 + 55;
+            .team-logo {
+                width: 55px;
+                height: @hero-img-h;
+                overflow: hidden;
+                position: relative;
+                background-position: center top;
+                background-size: auto 75%;
+                background-repeat: none!important;
+                float: left;
+                img {
+                    width: 35px;
+                    height: 20px;
+                    margin: 0 10px;
+                }
+                span {
+                    position: absolute;
+                    width: 100%;
+                    height: 10px;
+                    left: 0;
+                    bottom: 0;
+                    line-height: 10px;
+                    text-align: center;
+                    font-size: 10px;
+                }
+            }
+            .live-hero {
+                position: relative;
+                width: @hero-img-w;
+                height: @hero-img-h;
+                float: left;
+                background-size: contain!important;
+                span {
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    display: block;
+                    padding: 0 2px;
+                    background: #111;
+                    color: #fff;
+                }
+            }
+        }
+        .live-score-detail {
+            width: @live-w - (@hero-img-w * 5 + 55 )* 2;
+            height: @hero-img-h;
+            float: left;
+            position: relative;
+            text-align: center;
+            .score-floor {
+                width: 100%;
+                height: 50%;
+                line-height: @hero-img-h * 0.5;
+                font-size: 10px;
+                .score {
+                    width: 15%;
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+                span {
+                    float: left;
+                    height: 100%;
+                }
+                &:last-child {
+                    span {
+                        background-color: #CC0000;
+                        &:last-child {
+                            background-color: #006600;
+                        }
+                    }
+                }
+            }
+            .live-score-percent {
+                color: red;
+                .active {
+                    color: green;
+                }
+            }
+        }
+    }
+    @map-h: 300px;
+    @action-w: 250px;
+    .live-detail {
+        width: 100%;
+        min-height: 300px;
+    }
+    .live-map {
+        width: @map-h + 6;
+        height: @map-h;
+        background: url(/static/img/dota2_small_v2.jpg) no-repeat;
+        background-size: cover;
+    }
+    .live-action {
+        @live-padding: 8px;
+        width: @action-w - 8 * 2 - 6;
+        height: @map-h;
+        padding: 0 @live-padding @live-padding @live-padding;
+        margin: 0 8px;
+        overflow: hidden;
+        background-color: #2E3841;
+        .title-bar {
+            height: 20px;
+            width: 100%;
+            line-height: 20px;
+            font-size: 12px;
+            color: #CCC;
+        }
+        .live-content {
+            width: @action-w - @live-padding * 4;
+            height: @map-h - @live-padding - 20;
+            overflow: hidden;
+            background-color: #242E36;
+            @li-h: (@map-h - @live-padding - 20) / 10;
+            li {
+                width: 100%;
+                height: @li-h;
+                padding-bottom: 5px;
+                line-height: @li-h;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: @li-h - 5;
+                }
+                .dire {
+                    background-color: #CC0000;
+                }
+                .radiant {
+                    background-color: #006600;
+                }
+                span {
+                    width: 15%;
+                    height: 100%;
+                    float: left;
+                    text-align: center;
+                    &:first-child {
+                        width: 20%;
+                    }
+                    &:last-child {
+                        width: 65%;
+                        transition: width 0.5s;
+                    }
+                }
+            }
+        }
+    }
+    .live-video {
+        width: @live-w - @map-h - @action-w - 1;
+        height: @map-h;
+        padding: 8px;
+        background-color: #2E3841;
+        .gold-exp-diff {
+            width: 100%;
+            height: 150px;
+            line-height: 150px;
+            font-size: 30px;
+            text-align: center;
+        }
+        .video-list {
+            width: 100%;
+            height: @map-h - 8 * 2 - 150;
+            overflow: hidden;
+            background-color: #242E36;
+            .live-video-title {
+                height: 30px;
+                line-height: 30px;
+                font-size: 20px;
+                text-indent: 5px;
+            }
+            li {
+                margin-bottom: 1px;
+            }
+            a {
+                color: #CFD5D8;
+            }
+        }
+    }
+}

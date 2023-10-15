@@ -1,0 +1,123 @@
+#content {
+
+    // 主要样式
+    @detail-w: 1000px;
+    @detail-h: 300px;
+    @detail-side-w: 200px;
+    .match-detail {
+        width: @detail-w;
+        height: @detail-h;
+        margin: 0 auto;
+        .match-detail-right, .match-detail-left {
+            width: @detail-side-w;
+            height: @detail-h;
+            line-height: @detail-h;
+            float: left;
+            overflow: hidden;
+            img {
+                width: 100%;
+            }
+        }
+        .match-detail-middle {
+            width: @detail-w - 2 * @detail-side-w - 25 * 2;
+            height: @detail-h;
+            float: left;
+            margin: 0 25px;
+            padding: 50px;
+            @item-h: 36px;
+            .match-detail-total-item {
+                width: 100%;
+                height: @item-h;
+                margin-bottom: @item-h / 2;
+                line-height: @item-h;
+                font-size: 25px;
+                font-weight: bold;
+                color: #FFF;
+                text-align: center;
+                span {
+                    float: left;
+                    width: 33.3%;
+                    height: @item-h;
+                }
+                a {
+                    display: block;
+                    // width: 150px;
+                    margin: 0 auto;
+                    font-size: 16px;
+                    font-weight: normal;
+                    color: #FFF;
+                    text-decoration: none;
+                    // background-color: #D43E35;
+                }
+            }
+        }
+        .left-win {
+            background: url(/static/img/trophy.png) no-repeat center left;
+            background-size: 50px 50px;
+        }
+        .right-win {
+            background: url(/static/img/trophy.png) no-repeat center right;
+            background-size: 50px 50px;
+        }
+    }
+    .match-btnbar {
+        width: @detail-w - 2 * @detail-side-w;
+        height: 50px;
+        margin: 0 auto;
+        text-align: center;
+        .btn-group:nth-child(2) {
+            margin: 0 20px;
+        }
+        .dropdown-menu {
+            display: block;
+            width: 130px;
+            overflow: hidden;
+            margin: 0;
+            padding: 5px;
+            border: none;
+            cursor: pointer;
+            background: #2e6da4;
+            li {
+                width: 130px;
+                overflow: hidden;
+                margin-bottom: 4px;
+                img {
+                    width: 50px;
+                    height: 30px;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .match-info {
+        margin-top: 20px;
+        box-shadow: 0 0 1px 1px rgb(10, 10, 10);
+        border-collapse: collapse;
+        border-spacing: 1px;
+        font-size: 14px;
+        th,td {
+            border: none;
+        }
+        table {
+            margin-bottom: 0;
+            tbody {
+                tr:nth-child(2n+1) {
+                    background-color: rgba(24, 24, 24, 0.8);
+                }
+                tr:nth-child(2n) {
+                    background-color: rgb(12, 12, 12);
+                }
+            }
+        }
+        .table-head {
+            background-color: rgb(12, 12, 12);
+        }
+        .table-result {
+            td {
+                line-height: 30px;
+            }
+        }
+    }
+}

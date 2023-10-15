@@ -1,0 +1,86 @@
+{
+  "playback_time": 3045.1,
+  "playback_ticks": 91353,
+  "playback_frames": 45651,
+  "game_info": {
+    "dota": {
+      "match_id": 1293018826,
+      "game_mode": 22,
+      "game_winner": 2,
+      "player_info": [
+        {
+          "hero_name": "npc_dota_hero_invoker",
+          "player_name": "Gz",
+          "is_fake_client": false,
+          "steamid": 76561197966006433,
+          "game_team": 2
+        },
+        {
+          "hero_name": "npc_dota_hero_clinkz",
+          "player_name": "matjetius",
+          "is_fake_client": false,
+          "steamid": 76561198098366149,
+          "game_team": 2
+        },
+        {
+          "hero_name": "npc_dota_hero_antimage",
+          "player_name": "Ebre",
+          "is_fake_client": false,
+          "steamid": 76561198078090050,
+          "game_team": 2
+        },
+        {
+          "hero_name": "npc_dota_hero_furion",
+          "player_name": "[ゴジラ] Maki",
+          "is_fake_client": false,
+          "steamid": 76561198116647674,
+          "game_team": 2
+        },
+        {
+          "hero_name": "npc_dota_hero_bristleback",
+          "player_name": "Fluid",
+          "is_fake_client": false,
+          "steamid": 76561198064206188,
+          "game_team": 2
+        },
+        {
+          "hero_name": "npc_dota_hero_silencer",
+          "player_name": "Kelevra_Shuriken",
+          "is_fake_client": false,
+          "steamid": 76561197971771078,
+          "game_team": 3
+        },
+        {
+          "hero_name": "npc_dota_hero_juggernaut",
+          "player_name": "快乐土豪",
+          "is_fake_client": false,
+          "steamid": 76561198012548597,
+          "game_team": 3
+        },
+        {
+          "hero_name": "npc_dota_hero_zuus",
+          "player_name": "Cpt. Squirrel",
+          "is_fake_client": false,
+          "steamid": 76561198080453398,
+          "game_team": 3
+        },
+        {
+          "hero_name": "npc_dota_hero_dragon_knight",
+          "player_name": "Flume",
+          "is_fake_client": false,
+          "steamid": 76561198051825885,
+          "game_team": 3
+        },
+        {
+          "hero_name": "npc_dota_hero_storm_spirit",
+          "player_name": "`iLLaaaa",
+          "is_fake_client": false,
+          "steamid": 76561198155694688,
+          "game_team": 3
+        }
+      ],
+      "leagueid": 0,
+      "end_time": 1425449026
+    }
+  }
+}
